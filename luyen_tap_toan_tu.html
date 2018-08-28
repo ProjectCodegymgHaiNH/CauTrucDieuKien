@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện Toán tử</title>
+</head>
+<body>
+    <script>
+        alert("Bài 1")
+        let a = prompt("Nhập số a")
+        let b = prompt("Nhập số b")
+        let kq = (a + b)>4? "Over" : "Bellow"
+        alert(kq)
+
+
+        alert("Bài 2")
+        let str = prompt("Nhập một chuỗi bất kỳ")
+        let mess
+        // if(str == "Employee"){
+        //     mess ="Hello"
+        //     alert(mess)
+        // }else if(str == "Director"){
+        //     mess = "Greetings"
+        //     alert(mess)
+        // }else if(str == ""){
+        //     mess = "No Login"
+        //     alert(mess)
+        // }else{
+        //     mess = ""
+        //     alert(mess)
+        // }
+
+        mess = (str == "Employee") ? "Hello" : (str == "Director") ? "Greetings" : (str == "") ? "No login" : ""
+        alert( mess)
+    </script>
+</body>
+</html>
