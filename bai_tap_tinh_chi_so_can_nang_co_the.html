@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính chỉ số cân nặng cơ thể</title>
+</head>
+<body>
+<script>
+    let bmi, height, weight
+    height = Number(prompt("Nhập chiều cao (Theo centimet)"))
+    weight = Number(prompt("Nhập cân nặng (theo kilogam)"))
+
+    bmi = (weight*10000)/(height*height)
+    alert(bmi.toFixed(1))
+    if(bmi<18){
+        alert("Bạn bị thiếu cân")
+    }else if(bmi<25){
+        alert("Bình thường")
+    }else if(bmi<30){
+        alert("Bạn hơi béo")
+    }else{
+        alert("Bạn quá béo")
+    }
+</script>
+</body>
+</html>
